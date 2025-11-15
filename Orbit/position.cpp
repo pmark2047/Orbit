@@ -1,78 +1,22 @@
-#pragma once
+/***********************************************************************
+ * Source File:
+ *    POSITION
+ * Author:
+ *    Peyton and Jackson
+ * Summary:
+ *    Everything we need to know about a position
+ ************************************************************************/
 
-#include <iostream> 
-#include <cmath>
+#include "position.h"
+#include <math.h>  // for floor()
+#include <cassert>
+using namespace std;
 
-class TestPosition;
-class Acceleration;
-class Velocity;
-
-/*********************************************
- * Position
- * A single position on the field in Meters
- *********************************************/
-class Position
+ /************************************
+  * POSITION : ADD
+  ************************************/
+void Position::add (const Acceleration & a, const Velocity & v, double t)
 {
-public:
-   friend TestPosition;
-
-   // constructors
-   Position() : x(0.0), y(0.0) {}
-   Position(double x, double y);
-   Position(const Position& pt) : x(pt.x), y(pt.y) {}
-   Position& operator = (const Position& pt);
-
-   // getters
-   double getMetersX()       const { return x; }
-   double getMetersY()       const { return y; }
-   double getPixelsX()       const { return x / metersFromPixels; }
-   double getPixelsY()       const { return y / metersFromPixels; }
-
-   // setters
-   void setMeters(double xMeters, double yMeters) { x = xMeters; y = yMeters; }
-   void setMetersX(double xMeters) { x = xMeters; }
-   void setMetersY(double yMeters) { y = yMeters; }
-   void setPixelsX(double xPixels) { x = xPixels * metersFromPixels; }
-   void setPixelsY(double yPixels) { y = yPixels * metersFromPixels; }
-   void addMetersX(double dxMeters) { setMetersX(getMetersX() + dxMeters); }
-   void addMetersY(double dyMeters) { setMetersY(getMetersY() + dyMeters); }
-   void addPixelsX(double dxPixels) { setPixelsX(getPixelsX() + dxPixels); }
-   void addPixelsY(double dyPixels) { setPixelsY(getPixelsY() + dyPixels); }
-
-   // deal with the ratio of meters to pixels
-   void setZoom(double metersFromPixels)
-   {
-      this->metersFromPixels = metersFromPixels;
-   }
-   double getZoom() const { return metersFromPixels; }
-
-private:
-   double x;                 // horizontal position
-   double y;                 // vertical position
-   static double metersFromPixels;
-};
-
-/*********************************************
- * COMPUTE DISTANCE
- * Find the distance between two positions
- *********************************************/
-inline double computeDistance(const Position& pos1, const Position& pos2)
-{
-   return sqrt((pos1.getMetersX() - pos2.getMetersX()) * (pos1.getMetersX() - pos2.getMetersX()) +
-      (pos1.getMetersY() - pos2.getMetersY()) * (pos1.getMetersY() - pos2.getMetersY()));
+   x += (v.getDX() * t) + (0.5 * a.getDDX() * t*t);
+   y += (v.getDY() * t) + (0.5 * a.getDDY() * t*t);
 }
-
-// stream I/O useful for debugging
-std::ostream& operator << (std::ostream& out, const Position& pt);
-std::istream& operator >> (std::istream& in, Position& pt);
-
-
-/*********************************************
- * PT
- * Trivial point
- *********************************************/
-struct PT
-{
-   double x;
-   double y;
-};

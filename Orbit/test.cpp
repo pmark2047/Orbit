@@ -8,6 +8,9 @@
  ************************************************************************/
 
 #include "test.h"
+#include "testPosition.h"
+#include "testVelocity.h"
+#include "testAcceleration.h"
 #include <iostream>
 using namespace std;
 
@@ -39,7 +42,8 @@ void testRunner()
 #endif // _WIN32
 
    // unit tests
-   // ex. PositionTest().run();
-   cout << "Hello World" << endl;
+   TestPosition().run();
+   TestVelocity().run();
+   TestAcceleration().run();
    
 }

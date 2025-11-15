@@ -27,8 +27,8 @@ public:
       constructor_default();
       constructor_nonDefault();
       constructor_copy();
-      getX();
-      getY();
+      getMetersX();
+      getMetersY();
       equals_equals();
       equals_xDifferent();
       equals_yDifferent();
@@ -37,10 +37,10 @@ public:
       notEquals_yDifferent();
 
       // Ticket 4: Add
-      addX_zero();
-      addX_value();
-      addY_zero();
-      addY_value();
+      addMetersX_zero();
+      addMetersX_value();
+      addMetersY_zero();
+      addMetersY_value();
       add_stationary();
       add_noTime();
       add_moving1Second();
@@ -128,7 +128,7 @@ private:
      * input:   (2.3, 4.5)
      * output:  2.3
      *********************************************/
-   void getX()
+   void getMetersX()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -136,7 +136,7 @@ private:
       double x = 99.9;
 
       // exercise
-      x = pos.getX();
+      x = pos.getMetersX();
 
       // verify
       assertEquals(pos.x, 2.3);
@@ -149,7 +149,7 @@ private:
     * input:   (2.3, 4.5)
     * output:  4.5
     *********************************************/
-   void getY()
+   void getMetersY()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -157,7 +157,7 @@ private:
       double y = 99.9;
 
       // exercise
-      y = pos.getY();
+      y = pos.getMetersY();
 
       // verify
       assertEquals(pos.x, 2.3);
@@ -339,7 +339,7 @@ private:
      * output:  (2.3, 4.5)
      *********************************************/
      // add nothing
-   void addX_zero()
+   void addMetersX_zero()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -347,7 +347,7 @@ private:
       double x = 0.0;
 
       // exercise
-      pos.addX(x);
+      pos.addMetersX(x);
 
       // verify
       assertEquals(pos.x, 2.3);
@@ -360,7 +360,7 @@ private:
     * input:   (2.3, 4.5) x=4.1
     * output:  (2.3, 4.5)
     *********************************************/
-   void addX_value()
+   void addMetersX_value()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -368,7 +368,7 @@ private:
       double x = 4.1;
 
       // exercise
-      pos.addX(x);
+      pos.addMetersX(x);
 
       // verify
       assertEquals(pos.x, 6.4);
@@ -381,7 +381,7 @@ private:
     * input:   (2.3, 4.5) y=0.0
     * output:  (2.3, 4.5)
     *********************************************/
-   void addY_zero()
+   void addMetersY_zero()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -389,7 +389,7 @@ private:
       double y = 0.0;
 
       // exercise
-      pos.addY(y);
+      pos.addMetersY(y);
 
       // verify
       assertEquals(pos.x, 2.3);
@@ -402,7 +402,7 @@ private:
     * input:   (2.3, 4.5) y=4.1
     * output:  (2.3, 4.5)
     *********************************************/
-   void addY_value()
+   void addMetersY_value()
    {  // setup
       Position pos;
       pos.x = 2.3;
@@ -410,7 +410,7 @@ private:
       double y = 4.1;
 
       // exercise
-      pos.addY(y);
+      pos.addMetersY(y);
 
       // verify
       assertEquals(pos.x, 2.3);
