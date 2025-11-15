@@ -19,7 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		960BD06D2EC716A600BA7CF8 /* Orbit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Orbit; path = "/Users/peytonmarkus/Library/CloudStorage/OneDrive-BYU-Idaho/BYUI/Fall_2025/Inheritance/Orbit/Lab09/Orbit/build/Debug/Orbit"; sourceTree = "<absolute>"; };
+		96DDBF572EC92D59004DE0CD /* Orbit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Orbit; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				960BD05A2EC712F600BA7CF8 /* Orbit */,
+				96DDBF572EC92D59004DE0CD /* Orbit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +71,7 @@
 			packageProductDependencies = (
 			);
 			productName = Orbit;
-			productReference = 960BD06D2EC716A600BA7CF8 /* Orbit */;
+			productReference = 96DDBF572EC92D59004DE0CD /* Orbit */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
