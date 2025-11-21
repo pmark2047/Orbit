@@ -1,18 +1,20 @@
+/***************************************************************************
 * Source File :
 *User Interface Draw : put pixels on the screen
 * Author :
-   *Br.Helfrich
-   * Summary :
-   *This is the code necessary to draw on the screen.We have a collection
-   * of procedural functions here because each draw function does not
-   *retain state.In other words, they are verbs(functions), not nouns
-   * (variables) or a mixture(objects)
-   * ***********************************************************************/
+*Br.Helfrich
+* Summary :
+*This is the code necessary to draw on the screen.We have a collection
+* of procedural functions here because each draw function does not
+*retain state.In other words, they are verbs(functions), not nouns
+* (variables) or a mixture(objects)
+* ***********************************************************************/
 
 #include <string>     // need you ask?
 #include <sstream>    // convert an integer into text
 #include <cassert>    // I feel the need... the need for asserts
 #include <time.h>     // for clock
+#include "uiDraw.h"
 
 
 #ifdef __APPLE__
@@ -35,7 +37,6 @@
 #endif // _WIN32
 
 #include "position.h"
-#include "uiDraw.h"
 
    using namespace std;
 

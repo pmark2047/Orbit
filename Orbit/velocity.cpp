@@ -43,3 +43,14 @@ void Velocity::set(const Angle & angle, double magnitude)
    dx = sin(angle.getRadians()) * magnitude;
    dy = cos(angle.getRadians()) * magnitude;
 }
+
+/*********************************************
+ * VELOCITY : += Operator
+ *  add to velocity
+ *********************************************/
+Velocity& Velocity::operator += (const Velocity& rhs)
+{
+   dx += rhs.dx;
+   dy += rhs.dy;
+   return *this;
+}

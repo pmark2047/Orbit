@@ -1,3 +1,13 @@
+/***********************************************************************
+ * Source File:
+ *    POSITION
+ * Author:
+ *    Peyton and Jackson
+ * Summary:
+ *    Everything we need to know about a position
+ ************************************************************************/
+
+#pragma once
 
 #include <iostream>
 #include "velocity.h"

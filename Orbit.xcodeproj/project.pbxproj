@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		96161A972ED120A10070E415 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964547322EC94CC000F1DD07 /* OpenGL.framework */; };
+		96161A992ED120A90070E415 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96161A982ED120A90070E415 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		960BD0562EC712F600BA7CF8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		96161A982ED120A90070E415 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		964547322EC94CC000F1DD07 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		96DDBF572EC92D59004DE0CD /* Orbit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Orbit; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -35,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96161A992ED120A90070E415 /* GLUT.framework in Frameworks */,
+				96161A972ED120A10070E415 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +55,17 @@
 			children = (
 				960BD05A2EC712F600BA7CF8 /* Orbit */,
 				96DDBF572EC92D59004DE0CD /* Orbit */,
+				964547312EC94CC000F1DD07 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		964547312EC94CC000F1DD07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96161A982ED120A90070E415 /* GLUT.framework */,
+				964547322EC94CC000F1DD07 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

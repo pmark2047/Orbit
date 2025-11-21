@@ -15,6 +15,7 @@
 #include <cassert>    // I feel the need... the need for asserts
 #include <time.h>     // for clock
 #include <cstdlib>    // for rand()
+#include "uiInteract.h"
 
 
 #ifdef __APPLE__
@@ -39,7 +40,6 @@
 #include <math.h>
 #endif // _WIN32
 
-#include "uiInteract.h"
 #include "position.h"
 
 using namespace std;
