@@ -16,4 +16,7 @@ class GPS : public Satellite
 		this->velocity = velocity;
 		dead = false;
 	};
+	moveGPS();
+	drawGPS();
+	destroyGPS();
 };

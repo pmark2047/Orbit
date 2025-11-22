@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\jacks\\source\\repos\\Orbit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\dragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\dragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -114,17 +114,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "dragon.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\dragon.h",
               "RelativeDocumentMoniker": "Orbit\\dragon.h",
               "ToolTip": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\dragon.h",
               "RelativeToolTip": "Orbit\\dragon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-22T18:26:26.352Z",
               "EditorCaption": ""
@@ -139,8 +139,7 @@
               "RelativeToolTip": "Orbit\\satellite.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T17:51:46.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T17:51:46.393Z"
             },
             {
               "$type": "Document",
@@ -152,38 +151,37 @@
               "RelativeToolTip": "Orbit\\position.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T17:50:10.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T17:50:10.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "GPS.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\GPS.h",
               "RelativeDocumentMoniker": "Orbit\\GPS.h",
               "ToolTip": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\GPS.h",
               "RelativeToolTip": "Orbit\\GPS.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-22T17:50:01.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "hubble.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\hubble.h",
               "RelativeDocumentMoniker": "Orbit\\hubble.h",
               "ToolTip": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\hubble.h",
               "RelativeToolTip": "Orbit\\hubble.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-22T17:49:45.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "starlink.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\starlink.h",
               "RelativeDocumentMoniker": "Orbit\\starlink.h",
@@ -191,12 +189,11 @@
               "RelativeToolTip": "Orbit\\starlink.h",
               "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T17:49:27.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T17:49:27.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "sputnik.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\sputnik.h",
               "RelativeDocumentMoniker": "Orbit\\sputnik.h",
@@ -204,12 +201,11 @@
               "RelativeToolTip": "Orbit\\sputnik.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T17:44:53.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T17:44:53.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "satellite.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\satellite.h",
               "RelativeDocumentMoniker": "Orbit\\satellite.h",
@@ -217,8 +213,7 @@
               "RelativeToolTip": "Orbit\\satellite.h",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T17:43:58.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T17:43:58.408Z"
             },
             {
               "$type": "Document",
@@ -230,8 +225,7 @@
               "RelativeToolTip": "Orbit\\position.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-15T23:40:59.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:40:59.195Z"
             },
             {
               "$type": "Document",
@@ -243,8 +237,7 @@
               "RelativeToolTip": "Orbit\\orbit.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-15T23:10:32.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:10:32.881Z"
             },
             {
               "$type": "Document",
