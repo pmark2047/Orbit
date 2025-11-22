@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\jacks\\source\\repos\\Orbit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\orbit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Orbit\\orbit.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\uiInteract.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OrbitLab\\uiInteract.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -79,6 +87,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "position.cpp",
+              "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\position.cpp",
+              "RelativeDocumentMoniker": "Orbit\\position.cpp",
+              "ToolTip": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\position.cpp",
+              "RelativeToolTip": "Orbit\\position.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-15T23:40:59.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "orbit.cpp",
+              "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\orbit.cpp",
+              "RelativeDocumentMoniker": "Orbit\\orbit.cpp",
+              "ToolTip": "C:\\Users\\jacks\\source\\repos\\Orbit\\Orbit\\orbit.cpp",
+              "RelativeToolTip": "Orbit\\orbit.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-15T23:10:32.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "uiInteract.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\uiInteract.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\uiInteract.cpp",
@@ -86,12 +119,11 @@
               "RelativeToolTip": "OrbitLab\\uiInteract.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-15T23:09:04.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:09:04.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "uiDraw.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\uiDraw.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\uiDraw.cpp",
@@ -99,12 +131,11 @@
               "RelativeToolTip": "OrbitLab\\uiDraw.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-15T23:09:02.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:09:02.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "sputnik.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\sputnik.h",
               "RelativeDocumentMoniker": "OrbitLab\\sputnik.h",
@@ -112,12 +143,11 @@
               "RelativeToolTip": "OrbitLab\\sputnik.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-15T23:09:01.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:09:01.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "sputnik.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\sputnik.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\sputnik.cpp",
@@ -125,12 +155,11 @@
               "RelativeToolTip": "OrbitLab\\sputnik.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-15T23:08:59.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:08:59.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "satellite.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\satellite.h",
               "RelativeDocumentMoniker": "OrbitLab\\satellite.h",
@@ -138,12 +167,11 @@
               "RelativeToolTip": "OrbitLab\\satellite.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-15T23:08:57.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T23:08:57.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "testPosition.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\testPosition.h",
               "RelativeDocumentMoniker": "OrbitLab\\testPosition.h",
@@ -154,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "testAcceleration.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\testAcceleration.h",
               "RelativeDocumentMoniker": "OrbitLab\\testAcceleration.h",
@@ -166,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "testVelocity.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\testVelocity.h",
               "RelativeDocumentMoniker": "OrbitLab\\testVelocity.h",
@@ -178,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "acceleration.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\acceleration.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\acceleration.cpp",
@@ -190,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "acceleration.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\acceleration.h",
               "RelativeDocumentMoniker": "OrbitLab\\acceleration.h",
@@ -202,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "velocity.h",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\velocity.h",
               "RelativeDocumentMoniker": "OrbitLab\\velocity.h",
@@ -214,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "testOrbit.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\testOrbit.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\testOrbit.cpp",
@@ -226,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "velocity.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\velocity.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\velocity.cpp",
@@ -238,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "position.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\position.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\position.cpp",
@@ -250,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "test.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\test.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\test.cpp",
@@ -262,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "orbit.cpp",
               "DocumentMoniker": "C:\\Users\\jacks\\source\\repos\\Orbit\\OrbitLab\\orbit.cpp",
               "RelativeDocumentMoniker": "OrbitLab\\orbit.cpp",
