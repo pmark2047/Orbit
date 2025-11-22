@@ -13,10 +13,24 @@
 #include <list>
 #include "angle.h"
 #include "position.h"
+#include "velocity.h"
 #include "uiDraw.h"
+#include "physics.hpp"
 #include "uiInteract.h"
 
 class Interface; // forward declaration
+
+enum SatellitesType
+{
+   SHIP,
+   GPS_WHOLE, GPS_LEFT, GPS_RIGHT, GPS_CENTER,
+   HUBBLE, HUBBLE_LEFT, HUBBLE_RIGHT, HUBBLE_COMPUTER, HUBBLE_CENTER,
+   STARLINK, STARLINK_BODY, STARLINK_ARRAY,
+   SPUTNIK,
+   CREWDRAGON,
+   FRAGMENT
+};
+
 
 class Satellite
 {
@@ -26,6 +40,9 @@ class Satellite
       //
       // constructors
       //
+   
+      // !!!!!! temp constructor !!!!!!
+      Satellite(const Position & pos, const Velocity & vel);
       
       // Earth needs a default constructor
       Satellite(int age = 0, double radius = 0.0, double angularVelocity = 0.0)
@@ -74,13 +91,13 @@ class Satellite
       virtual bool getDefunct() { return false; }
       
       // Draw an item on the screen
-      virtual void draw(ogstream &gout) {}
+      virtual void draw(ogstream &gout) { gout.drawSputnik(pos, angularVelocity); }
       
       // Kill this element
       virtual void destroy(std::list <Satellite*>& satellites) {}
       
       // Advance the item by (time dialation) seconds
-      virtual void move(double time) {};
+      virtual void move(double time);
       
       // Handle input
       virtual void input(const Interface& ui, std::list <Satellite*>& satellites) {}
