@@ -15,7 +15,7 @@
 #include "position.h"
 #include "velocity.h"
 #include "uiDraw.h"
-#include "physics.hpp"
+#include "physics.h"
 #include "uiInteract.h"
 
 class Interface; // forward declaration
@@ -52,6 +52,11 @@ class Satellite
       useRandom = true;
 #endif // DEBUG
       }
+   
+      //
+      // destructor
+      //
+      virtual ~Satellite();
       
       // Used to create parts and fragments
       Satellite(const Satellite& parent, const Angle & direction);
@@ -91,7 +96,7 @@ class Satellite
       virtual bool getDefunct() { return false; }
       
       // Draw an item on the screen
-      virtual void draw(ogstream &gout) { gout.drawSputnik(pos, angularVelocity); }
+      virtual void draw(ogstream &gout) {};
       
       // Kill this element
       virtual void destroy(std::list <Satellite*>& satellites) {}

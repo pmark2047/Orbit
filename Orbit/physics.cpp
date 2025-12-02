@@ -5,7 +5,7 @@
 //  Created by Peyton Markus on 2/27/25.
 //
 
-#include "physics.hpp"
+#include "physics.h"
 #include <cassert>
 
 /***************************************

@@ -8,6 +8,7 @@
  ************************************************************************/
 
 #include "satellite.h"
+#include "uiDraw.h"
 
 using namespace std;
 
@@ -20,6 +21,12 @@ Satellite::Satellite(const Position & pos, const Velocity & vel) :
    age(0),
    angularVelocity(0.0)
 { }
+
+// destructor
+Satellite::~Satellite()
+{
+   
+}
 
 /********************************************************
  * SATELLITE
@@ -72,6 +79,7 @@ Satellite::Satellite(const Satellite& parent, const Position& offset, const Velo
    pos.addMetersX(offset.getMetersX());
    pos.addMetersY(offset.getMetersY());
 }
+
 
 /********************************************************
  * SATELLITE :: MOVE

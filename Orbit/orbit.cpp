@@ -15,6 +15,7 @@
 #include "satellite.h"
 #include <iostream>
 #include "star.h"
+#include "sputnik.h"
 
 using namespace std;
 
@@ -29,12 +30,8 @@ class Simulator
 public:
    Simulator()
    {
-      Position posSputnik(-36515095.13, 21082035.96);
-      Velocity velSputnik(2052.27, 2946.52);
       
-      
-      
-      satellites.push_back(new Satellite(posSputnik, velSputnik));
+      satellites.push_back(new Sputnik());
       
       
       for (int i = 0; i < 500; i++)
