@@ -16,7 +16,7 @@ class GPS : public Satellite
 		this->velocity = velocity;
 		dead = false;
 	};
-	moveGPS();
-	drawGPS();
-	destroyGPS();
+	~GPS() override;
+
+	void draw(ogstream& gout) override { gout.drawGPS(pos, angularVelocity); }
 };

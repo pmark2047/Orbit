@@ -18,7 +18,7 @@ public:
 		dead = false;
 		radius = 10.0; // Num of pixels
 	};
-	moveStarlink();
-	drawStarlink();
-	destroyStarlink();
+	~Starlink() override;
+	void draw(ogstream& gout) override { gout.drawStarlink(pos, angularVelocity); }
+
 };

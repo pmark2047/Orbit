@@ -18,7 +18,7 @@ public:
 		dead = false;
 		radius = 4.0; // Num of pixels
 	};
-	moveHubble();
-	drawHubble();
-	destroyHubble();
+	~Hubble() override;
+
+	void draw(ogstream& gout) override { gout.drawHubble(pos, angularVelocity); }
 };

@@ -18,7 +18,7 @@ public:
 		dead = false;
 		radius = 7.0; // Num of pixels
 	};
-	moveDragon();
-	drawDragon();
-	destroyDragon();
+	~Dragon() override;
+
+	void draw(ogstream& gout) override { gout.drawDragon(pos, angularVelocity); }
 };
