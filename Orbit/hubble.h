@@ -7,6 +7,7 @@
 #include "uiDraw.h"
 #include "uiInteract.h"
 #include "satellite.h"
+#include "parts.h"
 
 class Hubble : public Satellite
 {
@@ -21,4 +22,12 @@ public:
 	~Hubble() override;
 
 	void draw(ogstream& gout) override { gout.drawHubble(pos, angularVelocity); }
+   
+   void destroy(list<Satellite*>& satellites) override
+   {
+      satellites.push_back(new HubbleLeft(*this, angle));
+      satellites.push_back(new HubbleRight(*this, angle));
+      satellites.push_back(new HubbleComputer(*this, angle));
+      satellites.push_back(new HubbleTelescope(*this, angle));
+   }
 };

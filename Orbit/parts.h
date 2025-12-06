@@ -1,84 +1,176 @@
 #pragma once
 
 #include <iostream>
-#include <list>
-#include "angle.h"
-#include "position.h"
 #include "uiDraw.h"
-#include "uiInteract.h"
 #include "satellite.h"
 
-class Parts
+/**************************
+ * GPS LEFT
+ * Part
+**************************/
+class GPSLeft : public Satellite
 {
 public:
-   Satellite(const Position& pos, const Velocity& vel);
-
-   // Earth needs a default constructor
-   Satellite(int age = 0, double radius = 0.0, double angularVelocity = 0.0)
-      : angularVelocity(angularVelocity), dead(false), age(age), radius(radius)
+   // constructor
+   GPSLeft(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
    {
-#ifndef NDEBUG
-      useRandom = true;
-#endif // DEBUG
+      radius = 8.0;
    }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawGPSLeft(pos, angle.getRadians());
+   }
+};
 
-   //
-   // destructor
-   //
-   virtual ~Satellite();
+/**************************
+ * GPS RIGHT
+ * Part
+**************************/
+class GPSRight : public Satellite
+{
+public:
+   // constructor
+   GPSRight(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawGPSRight(pos, angle.getRadians());
+   }
+};
 
-   // Used to create parts and fragments
-   Satellite(const Satellite& parent, const Angle& direction);
+/**************************
+ * GPS CENTER
+ * Part
+**************************/
+class GPSCenter : public Satellite
+{
+public:
+   // constructor
+   GPSCenter(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawGPSCenter(pos, angle.getRadians());
+   }
+};
 
-   // Used to create projectiles. they have specific speeds
-   Satellite(const Satellite& parent, const Position& offset, const Velocity& kick);
+/**************************
+ * HUBBLE LEFT WING
+ * Part
+**************************/
+class HubbleLeft : public Satellite
+{
+public:
+   // constructor
+   HubbleLeft(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawHubbleLeft(pos, angle.getRadians());
+   }
+};
 
-   //
-   // Getters
-   //
+/**************************
+ * HUBBLE RIGHT WING
+ * Part
+**************************/
+class HubbleRight : public Satellite
+{
+public:
+   // constructor
+   HubbleRight(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawHubbleRight(pos, angle.getRadians());
+   }
+};
 
-   // Return the radius of the Satellite in Meters
-   double getRadius() const { return radius; }
+/**************************
+ * HUBBLE COMPUTER
+ * Part
+**************************/
+class HubbleComputer : public Satellite
+{
+public:
+   // constructor
+   HubbleComputer(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 7.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawHubbleComputer(pos, angle.getRadians());
+   }
+};
 
-   // Return whether we are dead
-   bool isDead() const { return dead; }
+/**************************
+ * HUBBLE TELESCOPE
+ * Part
+**************************/
+class HubbleTelescope : public Satellite
+{
+public:
+   // constructor
+   HubbleTelescope(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawHubbleTelescope(pos, angle.getRadians());
+   }
+};
 
-   // This has got to go
-   bool isInvisible() const { return age < 10; }
+/**************************
+ * STARLINK BODY
+ * Part
+**************************/
+class StarlinkBody : public Satellite
+{
+public:
+   // constructor
+   StarlinkBody(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 6.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawStarlinkBody(pos, angle.getRadians());
+   }
+};
 
-   // Where are we pointed
-   const Angle& getAngle() const { return angle; }
-
-   // Where are we located
-   const Position& getPosition() const { return pos; }
-
-   //
-   // Stuff to be Overridden
-   //
-
-   virtual bool getDefunct() { return false; }
-
-   // Draw an item on the screen
-   virtual void draw(ogstream& gout) {};
-
-   // Kill this element
-   virtual void destroy(std::list <Satellite*>& satellites) {}
-
-   // Advance the item by (time dialation) seconds
-   virtual void move(double time);
-
-   // Handle input
-   virtual void input(const Interface& ui, std::list <Satellite*>& satellites) {}
-
-
-private:
-   Velocity    velocity;
-   Position    pos;
-   Angle       angle;
-   double      angularVelocity;
-   double      radius;
-   int         age;
-#ifndef NDEBUG
-   bool        useRandom;
-#endif // DEBUG
-}
+/**************************
+ * STARLINK ARRAY
+ * Part
+**************************/
+class StarlinkArray : public Satellite
+{
+public:
+   // constructor
+   StarlinkArray(const Satellite& parent, const Angle& direction) : Satellite(parent, direction)
+   {
+      radius = 8.0;
+   }
+   
+   void draw(ogstream& gout) override
+   {
+      gout.drawStarlinkArray(pos, angle.getRadians());
+   }
+};

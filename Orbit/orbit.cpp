@@ -20,6 +20,7 @@
 #include "GPS.h"
 #include "hubble.h"
 #include "starlink.h"
+#include "ship.h"
 
 
 using namespace std;
@@ -40,6 +41,8 @@ public:
       satellites.push_back(new Dragon());
       satellites.push_back(new Hubble());
       satellites.push_back(new Starlink());
+      satellites.push_back(new GPS());
+      satellites.push_back(new Ship());
       
       
       for (int i = 0; i < 500; i++)
@@ -63,12 +66,53 @@ public:
          stars.clear();
       }
    
-   void update()
+   void update(const Interface* pUI)
       {
-         for (auto it = satellites.begin(); it != satellites.end(); ++it)
+         // this handles input
+         for (auto it = satellites.begin(); it != satellites.end(); it++)
+            {
+               (*it)->input(*pUI, satellites);
+            }
+      
+         // this handles movement
+         for (Satellite* sat : satellites)
          {
-            (*it)->move(TIME_DILATION);
+            sat->move(TIME_DILATION);
          }
+      
+         // this will attempt to handle collision
+         for (auto it1 = satellites.begin(); it1 != satellites.end(); ++it1)
+         {
+            for (auto it2 = next(it1); it2 != satellites.end(); ++it2)
+            {
+               Satellite* sat1 = *it1;
+               Satellite* sat2 = *it2;
+               
+               double distance = computeDistance(sat1->getPosition(), sat2->getPosition());
+               double minDistance = sat1->getRadius() + sat2->getRadius();
+               
+               if(distance < minDistance + 300000)
+               {
+                  sat1->kill();
+                  sat2->kill();
+               }
+            }
+         }
+      
+         // this will destroy stuff
+         for (auto it = satellites.begin(); it != satellites.end();)
+         {
+            if ((*it)->isDead())
+            {
+               (*it)->destroy(satellites);
+               delete *it;
+               it = satellites.erase(it);
+            }
+         else
+         {
+            ++it;
+         }
+      }
       }
    
    // Draw stuff
@@ -107,7 +151,7 @@ void callBack(const Interface* pUI, void* p)
 {
    Simulator* pSimulator = (Simulator*)p;
 
-   pSimulator->update();
+   pSimulator->update(pUI);
    pSimulator->draw();
 }
 

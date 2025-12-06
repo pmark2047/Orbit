@@ -7,6 +7,7 @@
 #include "uiDraw.h"
 #include "uiInteract.h"
 #include "satellite.h"
+#include "parts.h"
 
 class Starlink : public Satellite
 {
@@ -19,6 +20,13 @@ public:
 		radius = 10.0; // Num of pixels
 	};
 	~Starlink() override;
+   
 	void draw(ogstream& gout) override { gout.drawStarlink(pos, angularVelocity); }
+   
+   void destroy(list<Satellite*>& satellites) override
+   {
+      satellites.push_back(new StarlinkBody(*this, angle));
+      satellites.push_back(new StarlinkArray(*this, angle));
+   }
 
 };
