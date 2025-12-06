@@ -16,6 +16,11 @@
 #include <iostream>
 #include "star.h"
 #include "sputnik.h"
+#include "dragon.h"
+#include "GPS.h"
+#include "hubble.h"
+#include "starlink.h"
+
 
 using namespace std;
 
@@ -32,6 +37,9 @@ public:
    {
       
       satellites.push_back(new Sputnik());
+      satellites.push_back(new Dragon());
+      satellites.push_back(new Hubble());
+      satellites.push_back(new Starlink());
       
       
       for (int i = 0; i < 500; i++)

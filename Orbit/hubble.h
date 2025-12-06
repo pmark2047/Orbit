@@ -13,7 +13,7 @@ class Hubble : public Satellite
 public:
 	Hubble()
 	{
-		position = Position(0.0, -42164000.0); // always starts here
+		pos = Position(0.0, -42164000.0); // always starts here
 		velocity = Velocity(3100.0, 0.0); // always starts this fast in this direction
 		dead = false;
 		radius = 4.0; // Num of pixels

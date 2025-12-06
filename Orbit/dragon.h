@@ -13,12 +13,13 @@ class Dragon : public Satellite
 public:
 	Dragon()
 	{
-		position = Position(0.0, -8000000.0); // always starts here
+		pos = Position(0.0, -8000000.0); // always starts here
 		velocity = Velocity(7900.0, 0.0); // always starts this fast in this direction
 		dead = false;
 		radius = 7.0; // Num of pixels
 	};
 	~Dragon() override;
 
-	void draw(ogstream& gout) override { gout.drawDragon(pos, angularVelocity); }
+	void draw(ogstream& gout) override { gout.drawCrewDragon(pos, angularVelocity); }
+   
 };
